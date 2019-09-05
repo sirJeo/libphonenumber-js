@@ -2,6 +2,7 @@ import { parseString } from 'xml2js'
 
 import { DIGIT_PLACEHOLDER } from '../AsYouType'
 // import { isSingleIDDPrefix } from '../IDD'
+import availableCountries from '../../available.countries'
 
 const phone_number_types =
 [
@@ -176,6 +177,10 @@ export default function(input, version, included_countries, extended, included_p
 		{
 			// A two-letter country code
 			const country_code = territory.$.id
+
+			if (!availableCountries.has(country_code)) {
+				continue;
+			}
 
 			// Skip this country if it has not been explicitly included
 			if (included_countries && !included_countries.has(country_code))

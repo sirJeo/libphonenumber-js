@@ -13495,7 +13495,7 @@
     <!-- http://www.itu.int/oth/T0202000066/en -->
     <!-- http://www.tct.ir/?siteid=1&pageid=195 -->
     <!-- http://118.tct.ir/citycode.htm -->
-    <!-- Prefix 9950 is mentioned as Public trunk with variable length 5 to 10 digits in ITU doc. 
+    <!-- Prefix 9950 is mentioned as Public trunk with variable length 5 to 10 digits in ITU doc.
          As we are unaware of the exact usage of this range and no online references we are not
          adding it. -->
     <territory id="IR" countryCode="98" internationalPrefix="00" nationalPrefix="0">
@@ -15515,7 +15515,7 @@
       </generalDesc>
       <!-- The prefixes 046, 050, 058, and 066 may appear online in less than 9 digits but
            calling them has confirmed these are outdated. However a 7-digit 068 number was
-           dialed successfully so we consider these valid despite the plan. Range 65 is still 
+           dialed successfully so we consider these valid despite the plan. Range 65 is still
            supported based on ca.go.ke's doc even though its not mentioned in ITU doc. -->
       <fixedLine>
         <possibleLengths national="[7-9]"/>
@@ -15539,8 +15539,8 @@
         </nationalNumberPattern>
       </fixedLine>
       <!-- Per www.ca.go.ke range 1\d{8} is mobile. The range has not been assigned to an operator
-           yet and no working numbers were found online. Not adding the range for now. 
-           As per Communication authority of Kenya range 10[0-2] is assigned to "Airtel" and 11[01] 
+           yet and no working numbers were found online. Not adding the range for now.
+           As per Communication authority of Kenya range 10[0-2] is assigned to "Airtel" and 11[01]
            is assigned to "Safaricom". -->
       <mobile>
         <possibleLengths national="9"/>
