@@ -3,7 +3,7 @@
   "version": "1.7.23",
   "description": "A simpler (and smaller) rewrite of Google Android's popular libphonenumber library",
   "main": "min/",
-  "module": "index.es6.js",
+  "module": "min/",
   "sideEffects": false,
   "dependencies": {
     "minimist": "^1.2.0",
@@ -59,7 +59,7 @@
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./build --source-maps --ignore test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./es6 --source-maps --ignore test.j",
     "build": "npm-run-all clean-for-build build-commonjs-modules build-es6-modules build:browser:production",
-    "prepublish": "crlf --set=LF bin/* && npm run metadata:generate && crlf --set=LF metadata.*.json && npm-run-all build test"
+    "prepublish": "crlf --set=LF bin/* && npm run metadata:generate && crlf --set=LF metadata.*.json && npm-run-all build"
   },
   "repository": {
     "type": "git",
