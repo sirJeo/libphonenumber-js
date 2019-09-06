@@ -62,10 +62,6 @@
     "!build": "npm-run-all metadata:generate build:browser:production",
     "prepublish": "crlf --set=LF bin/* && npm run metadata:generate && crlf --set=LF metadata.*.json && npm-run-all build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/catamphetamine/libphonenumber-js.git"
-  },
   "keywords": [
     "javascript",
     "telephone",
@@ -79,12 +75,5 @@
     "libphonenumber"
   ],
   "author": "catamphetamine <purecatamphetamine@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/catamphetamine/libphonenumber-js/issues"
-  },
-  "homepage": "https://github.com/catamphetamine/libphonenumber-js#readme",
-  "bin": {
-    "libphonenumber-generate-metadata": "./bin/update-metadata.js"
-  }
+  "license": "MIT"
 }
