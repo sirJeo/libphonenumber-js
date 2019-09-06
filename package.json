@@ -1,5 +1,5 @@
 {
-  "name": "libphonenumber-js",
+  "name": "emesa-libphonenumber",
   "version": "1.7.23",
   "description": "A simpler (and smaller) rewrite of Google Android's popular libphonenumber library",
   "main": "index.common.js",
@@ -63,16 +63,7 @@
     "prepublish": "crlf --set=LF bin/* && npm run metadata:generate && crlf --set=LF metadata.*.json && npm-run-all build"
   },
   "keywords": [
-    "javascript",
-    "telephone",
-    "phone",
-    "number",
-    "input",
-    "mobile",
-    "android",
-    "iphone",
-    "international",
-    "libphonenumber"
+    "javascript"
   ],
   "author": "catamphetamine <purecatamphetamine@gmail.com>",
   "license": "MIT"
